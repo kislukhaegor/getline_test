@@ -92,7 +92,7 @@ int main(int argc, char** argv) {
 
 	FILE* f = fopen(argv[1], "r");
 	if (!f) {
-		perror("Error: ");
+		perror("Error");
 		return 0;
 	}
 	unsigned count = strtol(argv[2], NULL, 10);

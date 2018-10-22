@@ -10,7 +10,7 @@ def generate(params):
     with open(params.filename, 'w') as f:
         size = 0
         while (size < params.size * 1024):
-            len = randint(30, 400)
+            len = randint(400, 800)
             f.write(random_string(len))
             size += len
 
